@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Question 1 -->
+        <TextView
+            android:id="@+id/question_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:text="1. What does HTML stand for?"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio_group_1"
+            android:layout_margin="16dp">
+
+            <RadioButton
+                android:id="@+id/question_1_rb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hyper Trainer Marking Language" />
+
+            <RadioButton
+                android:id="@+id/question_1_rb_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hyper Text Marketing Language" />
+
+            <RadioButton
+                android:id="@+id/question_1_rb_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hyper Text Markup Language" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <!-- Question 2 -->
+        <TextView
+            android:id="@+id/question_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:text="2. In Java, a method is a container that holds classes."
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group_2"
+            android:layout_margin="16dp">
+
+            <RadioButton
+                android:id="@+id/question_2_rb_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="True" />
+
+            <RadioButton
+                android:id="@+id/question_2_rb_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="False" />
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <!-- Question 3 -->
+        <TextView
+            android:id="@+id/question_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:text="3. What kind of software is Android?"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/question_3_answer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Type your response"
+            android:layout_margin="16dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <!-- Question 4 -->
+        <TextView
+            android:id="@+id/question_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:text="4. Which of the view(s) are available in Android"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_margin="16dp">
+            <CheckBox
+                android:id="@+id/question_4_checkBox_1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_alignParentLeft="true"/>
+
+            <CheckBox
+                android:id="@+id/question_4_checkBox_2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="ImageView"
+                android:layout_alignParentRight="true"/>
+
+            <CheckBox
+                android:id="@+id/question_4_checkBox_3"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="EditText"
+                android:layout_below="@id/question_4_checkBox_1"
+                android:layout_alignParentRight="true"/>
+
+            <CheckBox
+                android:id="@+id/question_4_checkBox_4"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="BlueText"
+                android:layout_below="@id/question_4_checkBox_2"
+                android:layout_alignParentLeft="true"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <!-- Question 5 -->
+        <TextView
+            android:id="@+id/question_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:padding="16dp"
+            android:text="5. Which company developed android?"
+            android:textColor="#616161"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radio_group_3"
+            android:layout_margin="16dp">
+
+            <RadioButton
+                android:id="@+id/question_5_rb_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Apple" />
+
+            <RadioButton
+                android:id="@+id/question_5_rb_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nokia" />
+
+            <RadioButton
+                android:id="@+id/question_5_rb_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Google" />
+
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="30dp"
+                android:onClick="submit"
+                android:background="@android:color/holo_green_light"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:onClick="reset"
+                android:background="@android:color/holo_orange_light"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
